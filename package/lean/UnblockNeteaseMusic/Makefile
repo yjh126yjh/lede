@@ -1,27 +1,24 @@
+# SPDX-Identifier-License: GPL-3.0-only
 #
-# Copyright (C) 2021 ImmortalWrt
-# <https://immortalwrt.org>
-#
-# This is free software, licensed under the GNU General Public License v3.
-# See /LICENSE for more information.
-#
+# Copyright (C) 2021 ImmortalWrt.org
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=UnblockNeteaseMusic
-PKG_BASE_VERSION:=0.26.0
+PKG_BASE_VERSION:=0.27.0-rc.4
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/1715173329/UnblockNeteaseMusic.git
-PKG_SOURCE_DATE:=2021-06-22
-PKG_SOURCE_VERSION:=a3abdc191f986f3cf618ee8c250c9291bbde09a8
-PKG_MIRROR_HASH:=ce31b943757711168bf09e94ea89aa902d3432c38e0887c85133f358d9d6dcd6
+PKG_SOURCE_URL:=https://github.com/UnblockNeteaseMusic/server.git
+PKG_SOURCE_DATE:=2021-12-21
+PKG_SOURCE_VERSION:=54b7a60b07a85dea3b52a5d9f1ada456aba12609
+PKG_MIRROR_HASH:=1865a01021ced0a57bcb1f0d63ef72b0e517771602ad7e4026d18222713a77ac
 
 PKG_VERSION:=$(PKG_BASE_VERSION)-$(PKG_SOURCE_DATE)-$(call version_abbrev,$(PKG_SOURCE_VERSION))
 
-PKG_LICENSE:=MIT
+PKG_LICENSE:=LGPL-3.0-only
 PKG_LICENSE_FILE:=LICENSE
+PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -30,7 +27,7 @@ define Package/UnblockNeteaseMusic
   CATEGORY:=Multimedia
   TITLE:=Revive Netease Cloud Music (NodeJS)
   URL:=https://github.com/nondanee/UnblockNeteaseMusic
-  DEPENDS:=+node +libopenssl
+  DEPENDS:=+node
   PKGARCH:=all
 endef
 
@@ -45,7 +42,6 @@ define Build/Configure
 endef
 
 define Build/Compile
-	true
 endef
 
 define Package/UnblockNeteaseMusic/install
