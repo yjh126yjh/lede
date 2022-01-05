@@ -10,7 +10,7 @@ name: Merge-upstream
 
 on:
   schedule:
-    - cron: '30 17 * * *'
+    - cron: '30 17 * * 6'
 
 jobs:
 
@@ -26,6 +26,7 @@ jobs:
         ref: build_k2p
         fetch-depth: 0
         lfs: true
+        token: ${{ secrets.REPO_TOKEN }}
 
     - name: Set git identity
       run : |
