@@ -73,7 +73,7 @@ jobs:
           CONFIG_TARGET_ramips_mt7621_DEVICE_phicomm_k2p=y
           CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
           CONFIG_PACKAGE_ebtables=y
-          CONFIG_DEFAULT_ebtables=y
+          CONFIG_PACKAGE_ipv6-helper=y
           CONFIG_DEFAULT_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=y
