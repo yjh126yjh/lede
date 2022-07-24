@@ -74,6 +74,8 @@ jobs:
           CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
           CONFIG_PACKAGE_ebtables=y
           CONFIG_PACKAGE_odhcp6c=y
+          CONFIG_PACKAGE_luci-app-unblockmusic=y
+          CONFIG_DEFAULT_luci-app-unblockmusic=y
           CONFIG_DEFAULT_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=y
