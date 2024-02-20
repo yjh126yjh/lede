@@ -91,6 +91,11 @@ jobs:
           CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
           CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=y
           CONFIG_PACKAGE_shadowsocksr-libev-ssr-server=y
+          CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
+          CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
+          CONFIG_PACKAGE_shadowsocks-libev-ss-rules=y
+          CONFIG_PACKAGE_shadowsocks-libev-ss-server=y
+          CONFIG_PACKAGE_shadowsocks-libev-config=y
           CONFIG_TARGET_IMAGES_GZIP=y
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
