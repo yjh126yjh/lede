@@ -87,8 +87,6 @@ jobs:
           CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server=y
           CONFIG_PACKAGE_shadowsocksr-libev-ssr-check=y
@@ -101,8 +99,6 @@ jobs:
           CONFIG_PACKAGE_shadowsocks-libev-ss-server=y
           CONFIG_PACKAGE_shadowsocks-libev-config=y
           CONFIG_PACKAGE_shadowsocks-libev-ss-tunnel=y
-          CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
-          CONFIG_PACKAGE_shadowsocks-rust-ssserver=y
           CONFIG_TARGET_IMAGES_GZIP=y
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
